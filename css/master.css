@@ -2,6 +2,7 @@
 /* Everything below is html boilerplate - css standard --- got code from class*/
 html {
   box-sizing: border-box;
+
 }
 
 *,
@@ -13,8 +14,6 @@ html {
 body {
   /* font: 1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; */
   background-color: lightgray;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 
@@ -23,7 +22,7 @@ body {
 
 
 /* ----header style---- */
-.header {
+/* .header {
   margin-top: 6%;
   margin-left: 6%;
   padding: 10px;
@@ -33,9 +32,42 @@ body {
 
 h1 {
   font-family: 'Staatliches', cursive;
+} */
+
+
+
+/* ----banner style---- */
+
+h1 {
+  font-size: 60px;
+  font-family: 'Staatliches', cursive;
 }
 
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Staatliches', cursive;
+}
 
+h6 {
+  font-size: 22px;
+  font-family: 'Staatliches', cursive;
+}
+
+.banner h1, .banner h3, .banner h6 {
+  margin: 0;
+  text-align: center;
+}
+
+.banner {
+  color: black;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* ----maincontent style---- */
