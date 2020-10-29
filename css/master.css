@@ -11,11 +11,10 @@ html {
   box-sizing: inherit;
 }
 
+/* css animated background */
 body {
-  /* font: 1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  background-color: lightgray;
+	background: linear-gradient(-45deg, #66D2D6, #FBC740, #BD97CB, #E56997);
 }
-
 
 
 
