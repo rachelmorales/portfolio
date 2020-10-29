@@ -88,6 +88,8 @@ h5:after {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
   grid-auto-rows: 200px;
+  margin: 0 auto;
+  padding: 50px;
   /* max-width: 1200px; */
 }
 
@@ -95,18 +97,20 @@ h5:after {
   object-fit: cover;
   width: 100%;
   height: 200px;
-}
-
-
-img {
   max-width: 100%;
   display: block;
 }
 
-.cards {
+
+/* img {
+  max-width: 100%;
+  display: block;
+} */
+
+/* .cards {
   margin: 0 auto;
   padding: 50px;
-}
+} */
 
 
 /* ----about me----- */
@@ -121,4 +125,21 @@ img {
   padding: 10px;
   font-size: 18px;
   text-align: left;
+}
+
+
+
+
+/* ------video cards------ */
+.video {
+  display: flex;
+}
+
+.content {
+  flex: 50%;
+  padding: 10px;
+}
+
+.content img {
+  max-width: 100%;
 }
