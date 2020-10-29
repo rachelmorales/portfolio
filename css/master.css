@@ -131,15 +131,17 @@ h5:after {
 
 
 /* ------video cards------ */
-.video {
+.row {
   display: flex;
+  padding: 40px;
 }
 
-.content {
+
+.column {
   flex: 50%;
   padding: 10px;
 }
 
-.content img {
+.column img {
   max-width: 100%;
 }
