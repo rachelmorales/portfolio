@@ -2,7 +2,6 @@
 /* Everything below is html boilerplate - css standard --- got code from class*/
 html {
   box-sizing: border-box;
-
 }
 
 *,
@@ -11,7 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-/* css animated background */
+/* --------css gradient background -------*/
 body {
 	background: linear-gradient(-45deg, #FFB067, #FFED86, #A2DCE7, #FF96B7);
 }
@@ -19,8 +18,7 @@ body {
 
 
 
-/* ----banner style---- */
-
+/* ----heading text sections style---- */
 h1 {
   font-size: 60px;
   font-family: 'Staatliches', cursive;
@@ -44,12 +42,14 @@ a {
   color: black;
 }
 
-.banner h1, .banner h3, .banner h6 {
+
+/* ----heading style---- */
+.heading h1, .heading h3, .heading h6 {
   margin: 0;
   text-align: center;
 }
 
-.banner {
+.heading {
   color: black;
   height: 300px;
   display: flex;
@@ -59,7 +59,7 @@ a {
 
 
 
-/* -----title sections----- */
+/* -----title sections with line through using flex----- */
 h5 {
   display: flex;
   flex-direction: row;
@@ -129,7 +129,6 @@ h2 {
   padding: 40px;
   align-items: center;
 }
-
 
 .content {
   flex: 50%;
