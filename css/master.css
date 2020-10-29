@@ -43,7 +43,7 @@ a {
 }
 
 
-/* ----heading style---- */
+/* ----heading style using flex---- */
 .heading h1, .heading h3, .heading h6 {
   margin: 0;
   text-align: center;
@@ -103,7 +103,7 @@ h5:after {
 
 
 
-/* ----about me----- */
+/* ----about me using grid article style----- */
 .about_section{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -123,7 +123,7 @@ h2 {
 
 
 
-/* ------video cards------ */
+/* ------video cards using flex------ */
 .video {
   display: flex;
   padding: 40px;
