@@ -104,18 +104,21 @@ h5:after {
 
 
 
-/* ----about me using grid article style----- */
-.about_section{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 10px;
-  padding: 10px;
+/* ----about me using flex & media breakpoint article style----- */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about p {
-  padding: 10px;
-  font-size: 18px;
-  text-align: left;
+.column {
+  flex: 33.3%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 h2 {
