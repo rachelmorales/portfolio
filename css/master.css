@@ -112,7 +112,7 @@ h5:after {
 
 .column {
   flex: 33.3%;
-  padding: 20px;
+  padding: 40px;
 }
 
 @media screen and (max-width: 800px) {
