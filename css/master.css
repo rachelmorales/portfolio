@@ -127,25 +127,23 @@ h2 {
 
 
 
-/* ------video cards using flex------ */
+/* ------making my iframe videos responsive------ */
+/* https://blog.theodo.com/2018/01/responsive-iframes-css-trick/ */
 .video {
-  display: flex;
-  padding: 40px;
-  align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
-.content {
-  flex: 50%;
-  padding: 10px;
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-.content img {
-  max-width: 100%;
+iframe {
+  padding: 20px; 
 }
-
-.content h2 {
-  text-align: center;
-  font-size: 25px;
-}
-
-p {text-align: center;}
