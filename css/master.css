@@ -121,6 +121,11 @@ h5:after {
   }
 }
 
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
 h2 {
   text-align: center;
 }
@@ -145,5 +150,5 @@ h2 {
 }
 
 iframe {
-  padding: 20px; 
+  padding: 20px;
 }
