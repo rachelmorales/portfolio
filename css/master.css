@@ -158,36 +158,26 @@ iframe {
 
 
 /* BFA Project -------------------------- */
-/* #container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.box {
-    width: 300px;
-    margin: 5px;
-    text-align: center;
-}
-
-.box img {
-  width: 100%;
-} */
-
 
 .project {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
 }
 
 .bfa {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bfa img {
   width: 50%;
+}
+
+.bfa p {
+  margin: 30px;
+}
+
+.bfa p2 {
+  color: blue;
 }
