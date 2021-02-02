@@ -8,6 +8,8 @@
   <title>Home</title>
   <link rel="stylesheet" href="css/master.css">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mklb/css/mklb.css" />
+  <script src="mklb/js/mklb.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 
   <h5>Digital</h5>
 
-  <div class="cards">
+  <!-- <div class="cards">
     <div class="card"><img src="image/photoshop/desert2.jpg"></div>
     <div class="card"><img src="image/photoshop/tara.jpg"></div>
     <div class="card"><img src="image/photoshop/lazers.jpg"></div>
@@ -63,7 +65,69 @@
     <div class="card"><a href="video.html"><img src="image/video/skulls3d.jpg"></a></div>
     <div class="card"><a href="video.html"><img src="image/video/mynameisdark.jpg"></a></div>
     <div class="card"><a href="video.html"><img src="image/video/BadTrip.png"></a></div>
+  </div> -->
+
+
+
+
+  <div class="cards">
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/desert2.jpg" alt="Midnight sun in Lofoten, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/tara.jpg" alt="Fishermen's cabins in Lofoten, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/lazers.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/FlowerSkullBlack.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/liquidchrome.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/lovedemon.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/mushroomgirl.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/neongirl.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/neonheart.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/orangetrees.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/Sascalia.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/vasescan.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/spacekween.png" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/spacetrip.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/skeletoninvatations.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
+    <div class="card"><img class="myImages" id="myImg" src="image/photoshop/heartmeltt.jpg" alt="Gerirangerfjord, Norway" width="300" height="200"></div>
   </div>
+
+
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+
+
+
+
+  <script>
+    // create references to the modal...
+    var modal = document.getElementById('myModal');
+    // to all images -- note I'm using a class!
+    var images = document.getElementsByClassName('myImages');
+    // the image in the modal
+    var modalImg = document.getElementById("img01");
+    // and the caption in the modal
+    var captionText = document.getElementById("caption");
+
+    // Go through all of the images with our custom class
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      // and attach our click listener for this image.
+      img.onclick = function(evt) {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
 
 
 </body>
