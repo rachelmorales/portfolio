@@ -1,4 +1,3 @@
-
 /* Everything below is html boilerplate - css standard --- got code from class*/
 html {
   box-sizing: border-box;
@@ -206,7 +205,14 @@ h5:after {
 
 
 /* -----------pop up modals for video */
+.button {
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-decoration: none;
+  display: inline-block;
 
+}
 
 
 
